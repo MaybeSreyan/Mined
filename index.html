@@ -1,0 +1,85 @@
+<html>
+<head>
+    <title>Early Access Stats</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+        
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Signika', sans-serif;
+            font-size: 0.875rem; /* Smaller font size */
+        }
+    </style>
+</head>
+<body>
+    <div id="root" class="flex justify-center items-start h-screen pt-10">
+        <div class="bg-black p-6 rounded-lg border border-gray-700">
+            <h1 class="text-gray-400 mb-4">Early Access Stats</h1>
+            <div class="mb-4">
+                <div class="flex items-center mb-2">
+                    <span class="text-gray-400 mr-2">Mined</span>
+                    <div class="w-1/2 h-4 bg-gray-700 overflow-hidden rounded-l-full">
+                        <div class="h-full bg-blue-500 rounded-l-full" style="width: 47.24%;"></div>
+                    </div>
+                    <span class="ml-2">47.24%</span>
+                </div>
+            </div>
+            <div class="mb-2">
+                <span class="text-gray-400">Total Reward</span>
+                <span class="ml-4">50,000</span>
+            </div>
+            <div class="mb-2">
+                <span class="text-gray-400">Genis Mined</span>
+                <span class="ml-4">0 / 50,000</span>
+            </div>
+            <div class="mb-2">
+                <span class="text-gray-400">Total Holders</span>
+                <span class="ml-4">214,409</span>
+            </div>
+            <div>
+                <span class="text-gray-400">Mining Started</span>
+                <span class="ml-4">29 October 2024</span>
+            </div>
+        </div>
+    </div>
+    <script type="text/babel">
+        const App = () => (
+            <div className="bg-black p-6 rounded-lg border border-gray-700">
+                <h1 className="text-gray-400 mb-4">Early Access Stats</h1>
+                <div className="mb-4">
+                    <div className="flex items-center mb-2">
+                        <span className="text-gray-400 mr-2">Mined</span>
+                        <div className="w-1/2 h-4 bg-gray-700 overflow-hidden rounded-l-full">
+                            <div className="h-full bg-blue-500 rounded-l-full" style={{ width: '47.24%' }}></div>
+                        </div>
+                        <span className="ml-2">47.24%</span>
+                    </div>
+                </div>
+                <div className="mb-2">
+                    <span className="text-gray-400">Total Reward</span>
+                    <span className="ml-4">50,000</span>
+                </div>
+                <div className="mb-2">
+                    <span className="text-gray-400">Genis Mined</span>
+                    <span className="ml-4">0 / 50,000</span>
+                </div>
+                <div className="mb-2">
+                    <span className="text-gray-400">Total Holders</span>
+                    <span className="ml-4">0</span>
+                </div>
+                <div>
+                    <span className="text-gray-400">Mining Started</span>
+                    <span className="ml-4">29 October 2024</span>
+                </div>
+            </div>
+        );
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
